@@ -1,0 +1,17 @@
+.access {
+    padding: 6rem 0 4rem 0;
+
+    .access__text-wrapper {
+        margin-bottom: 2.5rem;
+        max-width: 37.5rem;
+    }
+}
+
+@media Screen and (min-width: 1024px) {
+    .access {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

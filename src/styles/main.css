@@ -32,7 +32,7 @@ img {
 }
 
 section {
-  margin: 0 1.2rem;
+  margin: 0 1rem;
   text-align: center;
 }
 
@@ -143,7 +143,7 @@ section {
 }
 
 .hero__main-text-wrapper div {
-  margin: 0.8rem 0;
+  margin: 2rem 0;
 }
 
 @media Screen and (min-width: 1024px) {
@@ -175,10 +175,37 @@ section {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: left;
-    margin-left: 5rem;
+    margin: 0.8rem 0 0 5rem;
   }
   .hero__main-text-wrapper p {
     max-width: 350px;
+  }
+}
+
+.access {
+  padding: 6rem 0 4rem 0;
+}
+
+.access .access__text-wrapper {
+  margin-bottom: 2.5rem;
+  max-width: 37.5rem;
+}
+
+@media Screen and (min-width: 1024px) {
+  .access {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
