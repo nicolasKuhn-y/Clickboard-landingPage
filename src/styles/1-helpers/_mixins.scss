@@ -1,4 +1,5 @@
 @mixin downloadBtn($color) {
+    cursor: pointer;
     background-color: $color;
     color: hsl(0, 0%, 100%);
     font-family: inherit;
@@ -6,7 +7,14 @@
     border: none;
     border-radius: 2rem;
     margin-bottom: 1rem;
-    padding: 1.2rem 5.5rem;
+    padding: 1.2rem 5rem;
+    letter-spacing: 0.05rem;
+    transition: 550ms;
+    font-size: 0.9rem;
+
+    &:hover {
+        filter: saturate(200%);
+    }
 
     @media Screen and (min-width: 1024px) {
         padding: 1.2rem 3rem;

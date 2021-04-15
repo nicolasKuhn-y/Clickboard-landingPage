@@ -37,6 +37,7 @@ img {
 }
 
 .ios-btn {
+  cursor: pointer;
   background-color: #26baa4;
   color: white;
   font-family: inherit;
@@ -44,7 +45,16 @@ img {
   border: none;
   border-radius: 2rem;
   margin-bottom: 1rem;
-  padding: 1.2rem 5.5rem;
+  padding: 1.2rem 5rem;
+  letter-spacing: 0.05rem;
+  -webkit-transition: 550ms;
+  transition: 550ms;
+  font-size: 0.9rem;
+}
+
+.ios-btn:hover {
+  -webkit-filter: saturate(200%);
+          filter: saturate(200%);
 }
 
 @media Screen and (min-width: 1024px) {
@@ -55,6 +65,7 @@ img {
 }
 
 .mac-btn {
+  cursor: pointer;
   background-color: #6173ff;
   color: white;
   font-family: inherit;
@@ -62,7 +73,16 @@ img {
   border: none;
   border-radius: 2rem;
   margin-bottom: 1rem;
-  padding: 1.2rem 5.5rem;
+  padding: 1.2rem 5rem;
+  letter-spacing: 0.05rem;
+  -webkit-transition: 550ms;
+  transition: 550ms;
+  font-size: 0.9rem;
+}
+
+.mac-btn:hover {
+  -webkit-filter: saturate(200%);
+          filter: saturate(200%);
 }
 
 @media Screen and (min-width: 1024px) {
