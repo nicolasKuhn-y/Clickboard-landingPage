@@ -1,0 +1,33 @@
+.header {
+    padding: 3.5rem 0;
+    background-image: url("/src/assets/images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__wrapper {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 0.5rem;
+
+        .wrapper__img-container {
+            width: 8rem;
+        }
+
+        .wrapper__text {
+            margin: 1.5rem 0;
+        }
+    }
+}
+
+@media Screen and (min-width: 1024px) {
+    .header {
+        background-image: url("/src/assets/images/bg-header-desktop.png");
+        background-position: top;
+    }
+
+    .wrapper__text {
+        max-width: 500px;
+    }
+}

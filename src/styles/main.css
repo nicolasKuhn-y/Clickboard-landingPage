@@ -14,6 +14,7 @@ body {
 p {
   color: #9fabb2;
   margin: 1rem 0;
+  font-size: 1rem;
 }
 
 h1, h2, h3 {
@@ -21,7 +22,93 @@ h1, h2, h3 {
   font-weight: 600;
 }
 
+h1 {
+  font-size: 1.8rem;
+}
+
 img {
   width: 100%;
+}
+
+@media Screen and (min-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.ios-btn {
+  background-color: #26baa4;
+  color: white;
+  font-family: inherit;
+  font-weight: 600;
+  border: none;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  padding: 1.2rem 5.5rem;
+}
+
+@media Screen and (min-width: 1024px) {
+  .ios-btn {
+    padding: 1.2rem 3rem;
+    margin-left: 1rem;
+  }
+}
+
+.mac-btn {
+  background-color: #6173ff;
+  color: white;
+  font-family: inherit;
+  font-weight: 600;
+  border: none;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  padding: 1.2rem 5.5rem;
+}
+
+@media Screen and (min-width: 1024px) {
+  .mac-btn {
+    padding: 1.2rem 3rem;
+    margin-left: 1rem;
+  }
+}
+
+.header {
+  padding: 3.5rem 0;
+  background-image: url("/src/assets/images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0 0.5rem;
+}
+
+.header__wrapper .wrapper__img-container {
+  width: 8rem;
+}
+
+.header__wrapper .wrapper__text {
+  margin: 1.5rem 0;
+}
+
+@media Screen and (min-width: 1024px) {
+  .header {
+    background-image: url("/src/assets/images/bg-header-desktop.png");
+    background-position: top;
+  }
+  .wrapper__text {
+    max-width: 500px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

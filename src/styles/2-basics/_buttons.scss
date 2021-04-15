@@ -1,0 +1,7 @@
+.ios-btn{
+    @include downloadBtn($strong-cyan);
+}
+
+.mac-btn{
+    @include downloadBtn($light-blue);
+}

@@ -16,6 +16,7 @@ body{
 p{
     color: $grayish-blue;
     margin: 1rem 0;
+    font-size: 1rem;
 }
 
 h1,h2,h3{
@@ -23,6 +24,18 @@ h1,h2,h3{
     font-weight: $semi-bold-weight;
 }
 
+h1{
+    font-size: 1.8rem;
+}
+
 img{
     width: 100%;
+}
+
+@media Screen and (min-width:1024px) {
+    h1{
+        font-size: 2rem;
+    }
+    
+    
 }
