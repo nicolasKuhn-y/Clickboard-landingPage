@@ -11,11 +11,12 @@
 body{
     font-size: 18px;
     font-family: 'Bai Jamjuree', sans-serif;
+    line-height: 1.5;
 }
 
 p{
     color: $grayish-blue;
-    margin: 1rem 0;
+    margin: 0.8rem 0;
     font-size: 1rem;
 }
 
@@ -30,6 +31,11 @@ h1{
 
 img{
     width: 100%;
+}
+
+section{
+    margin: 0 1.2rem;
+    text-align: center;
 }
 
 @media Screen and (min-width:1024px) {

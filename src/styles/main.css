@@ -9,11 +9,12 @@
 body {
   font-size: 18px;
   font-family: 'Bai Jamjuree', sans-serif;
+  line-height: 1.5;
 }
 
 p {
   color: #9fabb2;
-  margin: 1rem 0;
+  margin: 0.8rem 0;
   font-size: 1rem;
 }
 
@@ -28,6 +29,11 @@ h1 {
 
 img {
   width: 100%;
+}
+
+section {
+  margin: 0 1.2rem;
+  text-align: center;
 }
 
 @media Screen and (min-width: 1024px) {
@@ -129,6 +135,50 @@ img {
   }
   .wrapper__text {
     max-width: 500px;
+  }
+}
+
+.hero__title-container {
+  margin-bottom: 2.5rem;
+}
+
+.hero__main-text-wrapper div {
+  margin: 0.8rem 0;
+}
+
+@media Screen and (min-width: 1024px) {
+  .hero__title-container {
+    display: inline-block;
+    max-width: 560px;
+  }
+  .hero__main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .hero__main-content .hero__img-container {
+    width: 50%;
+  }
+  .hero__main-text-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+    margin-left: 5rem;
+  }
+  .hero__main-text-wrapper p {
+    max-width: 350px;
   }
 }
 /*# sourceMappingURL=main.css.map */
