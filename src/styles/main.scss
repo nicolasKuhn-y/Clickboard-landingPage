@@ -1,0 +1,15 @@
+// SCSS file to compile all the other scss files. It shouldn't contain any kind of styles.
+
+// 1 HELPERS
+
+@import "./1-helpers/variables",
+        "./1-helpers/mixins";
+
+// 2 BASICS
+
+@import "./2-basics/general-styles";
+
+// 3-LAYOUTS
+
+@import "./3-layouts/header",
+        "./3-layouts/hero";
