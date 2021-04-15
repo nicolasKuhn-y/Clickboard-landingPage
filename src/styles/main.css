@@ -208,4 +208,32 @@ section {
             align-items: center;
   }
 }
+
+.features__row-wrapper {
+  margin: 4rem 0;
+}
+
+.features__feature-row {
+  padding: 2rem 0;
+}
+
+.features__feature-row .feature-row__img-container {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 1rem auto;
+}
+
+@media Screen and (min-width: 1024px) {
+  .features__row-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (21.875rem)[3];
+        grid-template-columns: repeat(3, 21.875rem);
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 /*# sourceMappingURL=main.css.map */

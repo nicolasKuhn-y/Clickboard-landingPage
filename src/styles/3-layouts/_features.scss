@@ -1,0 +1,22 @@
+.features__row-wrapper {
+    margin: 4rem 0;
+}
+
+.features__feature-row {
+    padding: 2rem 0;
+
+    .feature-row__img-container {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin: 1rem auto;
+    }
+}
+
+@media Screen and (min-width: 1024px) {
+    .features__row-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 21.875rem);
+        column-gap: 2rem;
+        justify-content: center;
+    }
+}
