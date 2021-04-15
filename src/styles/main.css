@@ -51,7 +51,7 @@ section {
   border: none;
   border-radius: 2rem;
   margin-bottom: 1rem;
-  padding: 1.2rem 5rem;
+  padding: 1.2rem 4.7rem;
   letter-spacing: 0.05rem;
   -webkit-transition: 550ms;
   transition: 550ms;
@@ -79,7 +79,7 @@ section {
   border: none;
   border-radius: 2rem;
   margin-bottom: 1rem;
-  padding: 1.2rem 5rem;
+  padding: 1.2rem 4.7rem;
   letter-spacing: 0.05rem;
   -webkit-transition: 550ms;
   transition: 550ms;
@@ -234,6 +234,46 @@ section {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+.company-logos {
+  margin-bottom: 5rem;
+}
+
+.company-logos__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  row-gap: 2.8rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.company-logos__wrapper img {
+  width: 7rem;
+}
+
+@media Screen and (min-width: 1024px) {
+  .company-logos__wrapper {
+    -ms-grid-columns: (15.625rem)[5];
+        grid-template-columns: repeat(5, 15.625rem);
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+    place-items: center;
+  }
+}
+
+.wrapper__text {
+  padding: 1.5rem 0;
+}
+
+@media Screen and (min-width: 1024px) {
+  .finish-section__wrapper {
+    margin: 0 auto;
+    max-width: 500px;
   }
 }
 /*# sourceMappingURL=main.css.map */

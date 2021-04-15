@@ -1,0 +1,10 @@
+.wrapper__text {
+    padding: 1.5rem 0;
+}
+
+@media Screen and (min-width: 1024px) {
+    .finish-section__wrapper {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+}
