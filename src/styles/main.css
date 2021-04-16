@@ -8,7 +8,7 @@
 
 body {
   font-size: 18px;
-  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: "Bai Jamjuree", sans-serif;
   line-height: 1.5;
 }
 
@@ -18,7 +18,13 @@ p {
   font-size: 1rem;
 }
 
-h1, h2, h3 {
+a {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3 {
   color: #4c545d;
   font-weight: 600;
 }
@@ -39,6 +45,9 @@ section {
 @media Screen and (min-width: 1024px) {
   h1 {
     font-size: 2rem;
+  }
+  section {
+    margin: 0;
   }
 }
 
@@ -266,6 +275,10 @@ section {
   }
 }
 
+.finish-section {
+  margin-bottom: 8rem;
+}
+
 .wrapper__text {
   padding: 1.5rem 0;
 }
@@ -274,6 +287,84 @@ section {
   .finish-section__wrapper {
     margin: 0 auto;
     max-width: 500px;
+  }
+}
+
+.footer {
+  padding: 2rem 1.5rem;
+  background-color: #f7f7f7;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  place-items: center;
+}
+
+.footer__wrapper .wrapper__img-container {
+  width: 4rem;
+  height: 4rem;
+}
+
+.nav__ul {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.nav__ul li {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.nav__ul a {
+  color: #4c545d;
+  text-decoration: none;
+}
+
+.nav__ul a:hover {
+  color: #26baa4;
+}
+
+.wrapper__icons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 70%;
+}
+
+.wrapper__icons-wrapper i:hover {
+  cursor: pointer;
+  color: #26baa4;
+}
+
+@media Screen and (min-width: 1024px) {
+  .footer__wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.3fr 1fr 0.3fr;
+        grid-template-columns: 0.3fr 1fr 0.3fr;
+  }
+  .wrapper__nav {
+    width: 100%;
+  }
+  .nav__ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    place-items: start;
   }
 }
 /*# sourceMappingURL=main.css.map */
